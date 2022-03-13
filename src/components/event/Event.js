@@ -3,15 +3,14 @@ import React, {useState, useEffect} from "react";
 const Event = ({
   event,
   allLocations,
-  setShowEventLocation,
-  showEventLocation
+  setShowEventLocation
 }) => {
   const [eventLocation, setEventLocation] = useState({});
   
   useEffect(() => {
       const location = allLocations.find(location => location.id === event.location);
       setEventLocation(location);
-  },[showEventLocation]);
+  },[allLocations, event]); 
   
   return (
     <div className='back'>

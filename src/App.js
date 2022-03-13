@@ -351,7 +351,7 @@ const App = () => {
                     event={event}
                     allLocations={allLocations}
                     setShowEventLocation={setShowEventLocation}
-                    showEventLocation={showEventLocation}/>
+                    />
                 )}
             </div>            
           </Fragment>

@@ -77,8 +77,6 @@ const Navbar = ({
     }
   };  
 
-  console.log(showEvents)
-
   return (
     <nav
       className='navbar navbar-expand-lg navbar-light bg-light fixed-top'
