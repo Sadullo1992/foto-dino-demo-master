@@ -67,7 +67,8 @@ body {
 }
 
 .city {
-  width: 30%;
+  margin-top: 80px;
+  width: 320px;
   position: absolute;
   background-color: white;
   border: 1px solid #ced4da;
@@ -164,8 +165,71 @@ body {
 }
 
 .event-form {
+  margin-top: 70px;
   width: 50%;
   border: 2px solid green;
   padding: 30px;
   border-radius: 20px;
+}
+
+.cities, .events, .city-form {
+  margin-top: 70px;
+}
+
+@media (max-width:1024px) {
+  .cities, .events, .event-form {
+    margin-top: 110px;
+    width: 70%;
+  }
+  .city-form {
+    margin-top: 110px;
+  }
+}
+
+@media (max-width:768px) {
+  .nav-form {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .cities, .events, .event-form {
+    width: 98%;
+    margin: 175px 10px;
+  }
+  .city-form {
+    margin-top: 175px;    
+  }
+}
+
+@media (max-width:475px) {
+  .nav-form {
+    align-items: center;
+  }
+  .nav-form > form,
+  .nav-form > div > div,
+  .nav-form > div > button {
+    margin: 10px 5px !important;
+  }
+  .nav-form > form > input {
+    width: 240px !important;
+  }
+  .cityItem, .eventItem {
+    padding: 10px 0 !important;
+  }
+  .cityItem h1, .eventItem h1 {
+    font-size: 18px;
+  }
+  
+  .cityItem h2, .eventItem h2 {
+    font-size: 14px;
+  }
+  
+  .cityItem h3, .eventItem h3 {
+    font-size: 12px;
+  }
+  .btn {
+    padding: 0.125rem 0.375rem !important;
+  }
+  .city-form {
+    width: 98%;    
+  }
 }

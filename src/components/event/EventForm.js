@@ -75,7 +75,7 @@ const EventForm = ({
   
 
     return (
-        <form className='event-form mx-auto my-5' onSubmit={onSubmit}>
+        <form className='event-form mx-auto' onSubmit={onSubmit}>
           <div className='d-flex flex-row justify-content-between'>
             <h2>Event Form</h2>
             <button 

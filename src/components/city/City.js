@@ -12,7 +12,7 @@ const City = ({
 }) => {
   return (
     <div className='back'>
-      <div className='city d-flex flex-column my-5'>
+      <div className='city d-flex flex-column'>
         <button
           className='btn btn-sm btn-danger'
           onClick={() => {

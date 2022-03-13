@@ -14,7 +14,7 @@ const Event = ({
   
   return (
     <div className='back'>
-      <div className='city event d-flex flex-column my-5'>
+      <div className='city event d-flex flex-column'>
         <button 
             className='btn btn-sm btn-danger'
             onClick={() => {

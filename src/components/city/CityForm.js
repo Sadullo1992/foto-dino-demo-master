@@ -44,7 +44,7 @@ const CityForm = ({
   };
 
   return (
-    <form className='city-form mx-auto my-5' onSubmit={onSubmit}>
+    <form className='city-form mx-auto' onSubmit={onSubmit}>
       <div className='d-flex flex-row justify-content-between'>
         <h2>City Form</h2>
         <button

@@ -13,7 +13,7 @@ const Events = ({
     searchEvent
 }) => {
   return (
-    <div className="events d-flex flex-column py-5 m-5">
+    <div className="events d-flex flex-column py-5">
         <div className="d-flex flex-row justify-content-between px-5">
             <h1>Events</h1>
             {searchEvent.searching && (

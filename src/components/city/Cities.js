@@ -12,7 +12,7 @@ const Cities = ({
   searchCity,
 }) => {  
   return (
-    <div className='cities d-flex flex-column py-5 m-5'>
+    <div className='cities d-flex flex-column py-5'>
       <div className='d-flex flex-row justify-content-between px-5'>
         <h1>Cities</h1>
         {searchCity.searching && (

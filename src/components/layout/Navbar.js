@@ -83,11 +83,13 @@ const Navbar = ({
       style={{ zIndex: "100" }}
     >
       <div className='container-fluid'>
-        <h1 className='navbar-brand'>Foto Dino</h1>
-        <button
-          className="btn btn-primary" 
-          onClick={() => setShowEvents(!showEvents)}
-          >{showEvents ? "Cities" : "Events"}</button>
+        <div>
+          <h1 className='navbar-brand'>Foto Dino</h1>
+          <button
+            className="btn btn-primary" 
+            onClick={() => setShowEvents(!showEvents)}
+            >{showEvents ? "Cities" : "Events"}</button>
+        </div>
         <button
           className='navbar-toggler'
           type='button'
@@ -100,10 +102,10 @@ const Navbar = ({
           <span className='navbar-toggler-icon'></span>
         </button>
         <div
-          className='collapse navbar-collapse justify-content-end'
+          className='nav-form collapse navbar-collapse justify-content-end'
           id='navbarSupportedContent'
         >
-          <form className='d-flex mx-5' onSubmit={onSubmit}>
+          <form className='d-flex m-3' onSubmit={onSubmit}>
             <input
               className='form-control me-2'
               type='search'
@@ -111,13 +113,14 @@ const Navbar = ({
               aria-label='Search'
               value={searchText}
               onChange={(e) => setSearchText(e.target.value)}
-              style={{ width: "300px" }}
+              style={{ width: "280px" }}
             />
             <button className='btn btn-success' type='submit'>
               Search
             </button>
           </form>
-          <div className='mx-5'>
+          <div>
+          <div className='m-3'>
             <p className='my-auto mx-2'>Sort by: </p>
             <ul className='navbar-nav'>
               <select
@@ -141,7 +144,7 @@ const Navbar = ({
           </div>
 
           <button
-            className='btn btn-warning mx-3'
+            className='btn btn-warning m-3'
             aria-current='page'
             onClick={() => {
               showEvents ? setAddEvent(true) : setAddCity(true)
@@ -149,6 +152,7 @@ const Navbar = ({
           >
             <i className='fa fa-plus'></i> {showEvents ? "Add Event" : "Add City"}
           </button>
+          </div>
         </div>
       </div>
     </nav>
