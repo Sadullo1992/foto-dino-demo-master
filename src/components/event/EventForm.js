@@ -17,9 +17,9 @@ const EventForm = ({
   const [description, setEventDescription] = useState("");
 
   useEffect(() => {
-    setEventLocation(updatingEvent.location ? updatingEvent.location : null);
+    // setEventLocation(updatingEvent.location ? updatingEvent.location : null);
     setEventDate(updatingEvent.event_date ? updatingEvent.event_date : "");
-    setEventStatus(updatingEvent.status ? updatingEvent.status : null);
+    // setEventStatus(updatingEvent.status ? updatingEvent.status : null);
     setEventName(updatingEvent.name ? updatingEvent.name : "");
     setEventDescription(updatingEvent.description ? updatingEvent.description : "");
   },[updatingEvent]);
@@ -55,15 +55,17 @@ const EventForm = ({
     if(updatingEvent.id !== undefined) {
       updateEvent({location, event_date, status, name, description}, updatingEvent.id);
     } else {
+      console.log("null");
       createEvent({location, event_date, status, name, description});
     }    
 
     
     setUpdatingEvent({});
     setAddEvent(false);
-    setEventLocation(null);
+
+    // setEventLocation(null);
     setEventDate("");
-    setEventStatus(null);
+    // setEventStatus(null);
     setEventName("");
     setEventDescription("");
   }

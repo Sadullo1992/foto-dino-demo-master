@@ -77,6 +77,8 @@ const Navbar = ({
     }
   };  
 
+  console.log(showEvents)
+
   return (
     <nav
       className='navbar navbar-expand-lg navbar-light bg-light fixed-top'
@@ -144,7 +146,7 @@ const Navbar = ({
             className='btn btn-warning mx-3'
             aria-current='page'
             onClick={() => {
-              showEvents ? setAddEvent(true) : setAddCity(true);
+              showEvents ? setAddEvent(true) : setAddCity(true)
             }}
           >
             <i className='fa fa-plus'></i> {showEvents ? "Add Event" : "Add City"}
